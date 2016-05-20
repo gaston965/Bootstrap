@@ -5,7 +5,12 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="/home/gastonb/Descargas/intro/bootstrap-3.3.6-dist/grid/botones.css">
- -->
+ --> <!-- <script src="validacion.js"></script> -->
+   <script type=text/javascript""src="/home/gastonb/Descargas/intro/bootstrap-3.3.6-dist/grid/validacion.js"></script>
+ 
+
+
+
 </head>
 <body>
 
@@ -35,7 +40,7 @@
           Menú #1 <b class="caret"></b>
         </a>
         <ul class="dropdown-menu">
-          <li><a href="#">Acción #1</a></li>
+          <li><a href="bootStrap-4-3-Botones de Formularios.html">Acción #1</a></li>
           <li><a href="#">Acción #2</a></li>
           <li><a href="#">Acción #3</a></li>
           <li class="divider"></li>
@@ -82,93 +87,95 @@
 
 
 
-   <div class="container">
+   <div class="container" id="formulario">
       
-     	<form class="form-horizontal">
-         <div class="form-group">
-         	<label for="nombre" class="control-label col-md-2">ID-Proveedor</label>
-          <div class="col-md-10">
-          	<input type="text" class="form-control" id="nombre" placeholder="ID-Proveedor">
-
-
-          </div>
-
-         </div>
-
-         
-
-         <div class="form-group">
-            <div class="">
-            	<label class="control-label col-md-2" for="Apellido-Proveedor">Apellido</label>
-				<div class="col-md-10">
-                	<input type="text" class="form-control" id="Apellido-Proveedor" placeholder="Apellido-Proveedor" >
-                </div>	
-
-            </div>
-
-            
-
-
-
-            </div>
-
-            
-         <div class="form-group">
-            <div class="">
-            	<label class="control-label col-md-2" for="DNI-Proveedor">DNI</label>
-				<div class="col-md-10">
-                	<input type="text" class="form-control" id="DNI-Proveedor" placeholder="DNI-Proveedor" >
-                </div>	
-
-            </div>
-
-            
-
-
-
-            </div>
-
-
-         <div class="form-group">
-            <div class="">
-            	<label class="control-label col-md-2" for="Domicilio-Proveedor">Domicilio-Proveedor</label>
-				<div class="col-md-10">
-                	<input type="text" class="form-control" id="Domicilio-Proveedor" placeholder="Domicilio-Proveedor" >
-                </div>	
-
-            </div>
-
-            
-
-
-
-            </div>
-
-               
-         <div class="form-group">
-            <div class="">
-            	<label class="control-label col-md-2" for="Telefono-Proveedor">Telefono-Proveedor</label>
-				<div class="col-md-10">
-                	<input type="text" class="form-control" id="Telefono-Proveedor" placeholder="Telefono-Proveedor" >
-                </div>	
-
-            </div>
-
-            
-
-
-
-            </div>
-
-
-             <div class="form-group">
-            <div class="">
-            	<label class="control-label col-md-2" for="Correo">Correo</label>
-				<div class="col-md-10">
-                	<input type="text" class="form-control " id="correo" placeholder="Correo" >
-                </div>	
-
-            </div>
+     
+     		<form class="form-horizontal">
+     	         <div class="form-group">
+     	         	<label for="nombre" class="control-label col-md-2" >ID-Proveedor</label>
+     	          <div class="col-md-10">
+     	          	<input type="text" class="form-control" id="IDPROVEEDOR" name="IDPROVEEDOR" placeholder="ID-Proveedor" >
+     	            <!-- <span class="help-block">Debe ingresar ID</span> -->
+     	
+     	          </div>
+     	
+     	         </div>
+     	
+     	         
+     	
+     	         <div class="form-group">
+     	            <div class="">
+     	            	<label class="control-label col-md-2" for="Apellido-Proveedor">Apellido</label>
+     					<div class="col-md-10">
+     	                	<input type="text" class="form-control" id="Apellido-Proveedor" placeholder="Apellido-Proveedor" value="" >
+     	                </div>	
+     	
+     	            </div>
+     	
+     	            
+     	
+     	
+     	
+     	            </div>
+     	
+     	            
+     	         <div class="form-group">
+     	            <div class="">
+     	            	<label class="control-label col-md-2" for="DNI-Proveedor">DNI</label>
+     					<div class="col-md-10">
+       	                	<input type="text" class="form-control" id="DNI-Proveedor" placeholder="DNI-Proveedor" value="" >
+     	                </div>	
+     	
+     	            </div>
+     	
+     	            
+     	
+     	
+     	
+     	            </div>
+     	
+     	
+     	         <div class="form-group">
+     	            <div class="">
+     	            	<label class="control-label col-md-2" for="Domicilio-Proveedor">Domicilio-Proveedor</label>
+     					<div class="col-md-10">
+     	                	<input type="text" class="form-control" id="Domicilio-Proveedor" placeholder="Domicilio-Proveedor" value="" >
+     	                </div>	
+     	
+     	            </div>
+     	
+     	            
+     	
+     	
+     	
+     	            </div>
+     	
+     	               
+     	         <div class="form-group">
+     	            <div class="">
+     	            	<label class="control-label col-md-2" for="Telefono-Proveedor">Telefono-Proveedor</label>
+     					<div class="col-md-10">
+     	                	<input type="text" class="form-control" id="Telefono-Proveedor" placeholder="Telefono-Proveedor" value="" >
+     	                </div>	
+     	
+     	            </div>
+     	
+     	            
+     	
+     	
+     	
+     	            </div>
+     	
+     	
+     	             <div class="form-group">
+     	            <div class="">
+     	            	<label class="control-label col-md-2" for="Correo">Correo</label>
+     					<div class="col-md-10">
+     	                	<input type="text" class="form-control " id="correo" placeholder="Correo" va >
+     	                </div>	
+     	
+     	            </div>
+     </form>
 
           <!--   <div class="form-group">
                 <div class="">
@@ -203,20 +210,34 @@
             	
             		<div class="form-group">
             		   <div class="col-md-offset-5">
-            			<button class="btn btn-default" id="miBoton"><i class="glyphicon glyphicon-floppy-save"></i> Guardar</button>
+            			<button class="btn btn-default " id="miBoton" ><i class="glyphicon glyphicon-floppy-save"></i> Guardar</button>
             		
-            			<button class="btn btn-default"id="miBoton"><i class="glyphicon glyphicon-remove"></i> Cancelar</button>
+            			<button class="btn btn-default"><i class="glyphicon glyphicon-remove"></i> Cancelar</button>
 
             			</div>
             		</div>
             	
+
+<!-- 
+									            	<ul class="pagination">
+									  <li><a href="#">&laquo;</a></li>
+									  <li><a href="bootStrap-4-2-Formularios.html">1</a></li>
+									  <li><a href="#">2</a></li>
+									  <li><a href="#">3</a></li>
+									  <li><a href="#">4</a></li>
+									  <li><a href="#">5</a></li>
+									  <li><a href="#">&raquo;</a></li>
+									</ul> -->
 
            
   
 
 
 	<script   src="https://code.jquery.com/jquery-1.12.3.min.js"   integrity="sha256-aaODHAgvwQW1bFOGXMeX+pC4PZIPsvn2h1sArYOhgXQ="   crossorigin="anonymous"></script>
+        <script  type="text/javascript" src="/home/gastonb/Descargas/intro/bootstrap-3.3.6-dist/grid/validacion.js"></script>
+ 
 	<!-- Latest compiled and minified JavaScript -->
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
 </body>
 </html>
