@@ -5,8 +5,9 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<!-- <link rel="stylesheet" href="/home/gastonb/Descargas/intro/bootstrap-3.3.6-dist/grid/botones.css">
- --> <!-- <script src="validacion.js"></script> -->
-   <script type=text/javascript""src="/home/gastonb/Descargas/intro/bootstrap-3.3.6-dist/grid/validacion.js"></script>
+ --> <script src="validacion.js"></script>
+ <link rel="stylesheet" href="validacion.css">
+   <!-- <script language="javascript" type=text/javascript""src="/home/gastonb/Descargas/intro/bootstrap-3.3.6-dist/grid/validacion.js"></script> -->
  
 
 
@@ -94,9 +95,9 @@
      	         <div class="form-group">
      	         	<label for="nombre" class="control-label col-md-2" >ID-Proveedor</label>
      	          <div class="col-md-10">
-     	          	<input type="text" class="form-control" id="IDPROVEEDOR" name="IDPROVEEDOR" placeholder="ID-Proveedor" >
-     	            <!-- <span class="help-block">Debe ingresar ID</span> -->
-     	
+     	          	<input type="text" class="form-control" id="IDPROVEEDOR"  placeholder="ID-Proveedor"  >
+     	            <span class="help-block" style="display: block" id="NOSE">Debe ingresar ID (dato obligatorio)</span> 
+     	              
      	          </div>
      	
      	         </div>
@@ -107,7 +108,8 @@
      	            <div class="">
      	            	<label class="control-label col-md-2" for="Apellido-Proveedor">Apellido</label>
      					<div class="col-md-10">
-     	                	<input type="text" class="form-control" id="Apellido-Proveedor" placeholder="Apellido-Proveedor" value="" >
+     	                	<input type="text" class="form-control" id="APELLIDOPROVEEDOR"  placeholder="Apellido-Proveedor" >
+     	                    <span class="help-block" >Debe ingresar Apellido</span> 
      	                </div>	
      	
      	            </div>
@@ -123,7 +125,7 @@
      	            <div class="">
      	            	<label class="control-label col-md-2" for="DNI-Proveedor">DNI</label>
      					<div class="col-md-10">
-       	                	<input type="text" class="form-control" id="DNI-Proveedor" placeholder="DNI-Proveedor" value="" >
+       	                	<input type="text" class="form-control" id="DNI-Proveedor" placeholder="DNI-Proveedor" value=""  >
      	                </div>	
      	
      	            </div>
@@ -171,7 +173,7 @@
      	            <div class="">
      	            	<label class="control-label col-md-2" for="Correo">Correo</label>
      					<div class="col-md-10">
-     	                	<input type="text" class="form-control " id="correo" placeholder="Correo" va >
+     	                	<input type="text" class="form-control " id="correo" placeholder="Correo" required="required" >
      	                </div>	
      	
      	            </div>
