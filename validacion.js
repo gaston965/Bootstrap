@@ -1,51 +1,104 @@
 $(document).ready(function(){
-    
+    $(".NOSE").addClass('ocultar');
+    $(".NOSE2").addClass('ocultar');
+    $(".NOSE3").addClass('ocultar');
 $("#miBoton").click(function()
-{      $("#NOSE").toggle("hide");
+     
+{      
 	if($("#IDPROVEEDOR").val() == ""){
-        $("#NOSE").toggle("show");
+        $(".NOSE").addClass('mostrar');
         $("#IDPROVEEDOR").addClass('resaltar');       // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
        
-  
+       
         $("#IDPROVEEDOR").click(function(){
-        $("#NOSE").toggle("hide")}); 
+          $("#IDPROVEEDOR").removeClass('resaltar');
+         $(".NOSE").removeClass('mostrar')}); 
            
-       return false;
+      
+            
+
+
+
+
+
+
+
+
+
+
      }
+         $(".NOSE").removeClass('resaltar');
+          $(".NOSE").addClass('ocultar');
 
-
-
-
-
-     
-   });});
-
-$(document).ready(function()
-	 
-{  
-    // $("#APHELP").addClass('hide');
-	$("#miBoton").click(function()
-{
-	if($("#APELLIDOPROVEEDOR").val() == ""){
-        // $("#APHELP").addClass('show');
+     	if($("#APELLIDOPROVEEDOR").val() == ""){
+        $(".NOSE2").addClass('mostrar');
         $("#APELLIDOPROVEEDOR").addClass('resaltar');       // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
        
-  
+       
         $("#APELLIDOPROVEEDOR").click(function(){
-        // $("#APHELP").addClass('hide')
-              }); 
-           
-       return false;
-     }
-
-
-
+          $("#APELLIDOPROVEEDOR").removeClass('resaltar');
+         $(".NOSE2").removeClass('mostrar')}); 
+         
 
 
      
-   });});
+   };     
+          $(".NOSE2").removeClass('resaltar');
+          $(".NOSE2").addClass('ocultar');
+
+          if($("#DNIPROVEEDOR").val() == ""){
+        $(".NOSE3").addClass('mostrar');
+        $("#DNIPROVEEDOR").addClass('resaltar');       // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
+       
+       
+        $("#DNIPROVEEDOR").click(function(){
+          $("#DNIPROVEEDOR").removeClass('resaltar');
+         $(".NOSE3").removeClass('mostrar')}); 
+         
 
 
+     
+   			}
+
+
+         $(".NOSE3").removeClass('resaltar');
+          $(".NOSE3").addClass('ocultar');
+         
+            
+        if($("#DNI-Proveedor").val() == ""){
+        $(".NOSE3").addClass('mostrar');
+        $("#DNI-Proveedor").addClass('resaltar');       // Esta función coloca el foco de escritura del usuario en el campo Nombre directamente.
+       
+       
+        $("#DNI-Proveedor").click(function(){
+          $("#DNI-Proveedor").removeClass('resaltar');
+         $(".NOSE3").removeClass('mostrar')}); 
+         
+
+
+     
+   			}
+
+
+         $(".NOSE3").removeClass('resaltar');
+          $(".NOSE3").addClass('ocultar');
+         return false;    
+   			
+
+
+
+
+
+
+
+         }
+  
+
+      
+
+   );});
+
+           
        
 
         
